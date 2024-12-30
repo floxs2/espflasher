@@ -1,0 +1,85 @@
+/* Подключаем шрифт Space Mono */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
+
+/* Общие стили для тела страницы */
+body {
+    font-family: 'Space Mono', monospace; /* Используем шрифт Space Mono */
+    background-color: #f0f8ff; /* Светлый голубой фон */
+    color: #333; /* Темный текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5em; /* Размер заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #007BFF; /* Цвет заголовка */
+}
+
+/* Подзаголовок */
+h2 {
+    font-size: 2em; /* Размер подзаголовка */
+    margin: 10px 0; /* Отступ сверху и снизу */
+}
+
+/* Контейнер для кнопок */
+#firmwares-container {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение кнопок */
+    gap: 10px; /* Пробел между кнопками */
+}
+
+/* Стили для кнопок */
+button {
+    padding: 12px 24px; /* Размеры кнопок */
+    font-size: 16px; /* Размер текста на кнопках */
+    color: white; /* Цвет текста */
+    background-color: #007BFF; /* Голубой цвет кнопок */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+    text-align: center; /* Центрируем текст */
+}
+
+/* Эффект наведения для кнопок */
+button:hover {
+    background-color: #0056b3; /* Темно-голубой при наведении */
+}
+
+/* Стили для ссылки на возврат */
+.back {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.back a {
+    font-size: 14px; /* Размер текста ссылки */
+    color: #007BFF; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.back a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Уменьшаем размер заголовка на мобильных устройствах */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Уменьшаем размер подзаголовка */
+    }
+
+    button {
+        padding: 10px 20px; /* Уменьшаем размеры кнопок */
+        font-size: 14px; /* Уменьшаем размер текста на кнопках */
+    }
+}

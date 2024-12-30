@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="EspFlasher">
+  <meta property="og:description" content="Прошивки для M5StickC Plus 2">
+  <meta name="description" content="Прошивки для M5StickC Plus 2" />
+  <title>EspFlasher // m5stickc plus2</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script type="module" src="esp-web-tool/install-button.js?module"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>EspFlasher
+      </h1>
+    </header>
+
+    <section class="name">
+      <div class="back">
+        <a href="index.html">
+          < Вернуться назад</a>
+      </div>
+    </section>
+    <div id="firmwares-container"></div>
+    <script defer>
+      const firmwares = [
+        { manifest: "manifests/stickplus2/Bruce_cplus2_v1.8", name: "Bruce" },
+        { manifest: "manifests/stickplus2/Launcher_cplus2_v2.3.1.json", name: "M5Launcher" },
+        { manifest: "manifests/stickplus2/CatHack_cplus2_v1.3.json", name: "CatHack" },
+      ];
+    </script>
+    <script async src="scripts/firmwares.js"></script>
+  </div>
+</body>
+
+</html>
